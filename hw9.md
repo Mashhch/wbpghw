@@ -127,3 +127,12 @@ FROM salary s
                    ON l.fk_titlename = tn.id
 ORDER BY s.fk_employee, s.from_date ASC;
 ```
+
+| fk\_employee | employee\_name | amount | from\_date | title            | diff   |
+|:-------------|:---------------|:-------|:-----------|:-----------------|:-------|
+| 1            | Eugene Aristov | 100000 | 2024-01-01 | manager          | 0      |
+| 1            | Eugene Aristov | 150000 | 2024-02-01 | manager          | 50000  |
+| 1            | Eugene Aristov | 200000 | 2024-02-03 | manager          | 50000  |
+| 1            | Eugene Aristov | 300000 | 2024-03-01 | vice president   | 100000 |
+| 2            | Ivan Ivanov    | 200000 | 2023-01-01 | teamlead         | 0      |
+| 3            | Petr Petrov    | 200000 | 2024-03-01 | python developer | 0      |
